@@ -9,7 +9,7 @@ const productRouter = require('./routes/products')
 const userRouter = require('./routes/user')
 
 // INITIALIZATIONS
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 const app = express() // initialize express and save it to app variable
 const DB =
   'mongodb+srv://kiishi:floSic1999@cluster0.vjcg9.mongodb.net/?retryWrites=true&w=majority'
